@@ -1,6 +1,15 @@
 // 项目创建完成后输出信息
 exports.run ={
-  "yarn":"Start to install dependencies for the project"
+  "yarn":"Start to install dependencies for the project",
+  "dev": "Start development",
+  "test": "Start test",
+  "debug": "Start debug",
+  "start": "Start production",
+  "stop": "Stop production",
+  "db:migrate:init":"npx sequelize migration:generate",
+  "db:migrate":"npx sequelize db:migrate",
+  "db:migrate:undo":"npx sequelize db:migrate:undo",
+  "db:migrate:undo:all":"npx sequelize db:migrate:undo:all",
 };
 
 // 必填
