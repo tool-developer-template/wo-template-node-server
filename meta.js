@@ -64,6 +64,12 @@ exports.prompts = {
     },
     "default":"localhost:50051"
   },
+  "sequelize.enable":{
+    "name":"sequelizeEnable",
+    "message":"Sequelize db is enable?",
+    "type":"confirm",
+    "default":false
+  },
   "db.dialect":{
     "name":"dialect",
     "message":"To select db config dialect",

@@ -1,3 +1,3 @@
-import {production} from './config.db.json';
+const {production} = require('./config.db.json');
 //
 exports.sequelize = production;

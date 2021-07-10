@@ -1,3 +1,3 @@
-import {test} from './config.db.json';
+const {test} = require('./config.db.json');
 //
 exports.sequelize = test;

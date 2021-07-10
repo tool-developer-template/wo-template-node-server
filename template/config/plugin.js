@@ -1,6 +1,6 @@
 // sequelize
 exports.sequelize = {
-  enable:true,
+  enable:<%= sequelizeEnable %>,
   package:'egg-sequelize'
 }
 
