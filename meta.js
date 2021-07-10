@@ -32,7 +32,10 @@ exports.prompts = {
   "cookie.keys":{
     "name":"cookieKeys",
     "message":"Input cookie keys",
-    "default":"`cookie-key:${this.name}`"
+    "default":function(prompts){
+      //
+      return 'cookie-key:' + prompts.name;
+    }
   },
   "grpc":{
     "message":"Do you want to use grpc?",
@@ -62,20 +65,18 @@ exports.prompts = {
   "db.database":{
     "name":"database",
     "message":"Input db config database",
-    "default":""
+    "validate":validateRequired
   },
   "db.username":{
     "name":"username",
     "message":"Input db config username",
-    "validate":validateRequired,
-    "default":""
+    "validate":validateRequired
   },
   "db.password":{
     "name":"password",
     "type":"password",
     "message":"Input db config password",
-    "validate":validateRequired,
-    "default":""
+    "validate":validateRequired
   },
   "db.host":{
     "name":"dbHost",
