@@ -25,7 +25,7 @@
     <% } -%>
     "egg-sequelize": "^6.0.0",
     "koa-jwt": "^4.0.1",
-    "egg-scripts": "^2.14.0",
+    "egg-scripts": "^2.14.0"
   },
   "devDependencies": {
     "egg-bin": "^4.16.1",
