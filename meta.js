@@ -27,7 +27,8 @@ exports.prompts = {
   "port":{
     "name":"port",
     "message":"Input server host port,like 7001",
-    "default":7001,
+    "default":7001
+  },
   "grpc":{
     "message":"Do you want to use grpc?",
     "type":"confirm",
