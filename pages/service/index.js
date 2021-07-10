@@ -8,4 +8,4 @@ class <%= contextName %>Service extends Service {
   }
 }
 
-module.exports = <%= contextName %>;
+module.exports = <%= contextName %>Service;

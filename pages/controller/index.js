@@ -7,4 +7,4 @@ class <%= contextName %>Controller extends Controller{
   }
 }
 
-module.exports = <%= contextName %>;
+module.exports = <%= contextName %>Controller;
