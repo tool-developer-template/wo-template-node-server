@@ -29,23 +29,15 @@ exports.prompts = {
     "message":"Input server host port,like 7001",
     "default":7001
   },
+  "cookie.keys":{
+    "name":"cookieKeys",
+    "message":"Input cookie keys",
+    "default":""
+  },
   "grpc":{
     "message":"Do you want to use grpc?",
     "type":"confirm",
     "default":true
-  },
-  "grpc.keys":{
-    "name":"grpcKeys",
-    "message":"Input grpc cookie keys",
-    "when":function(prompts){
-      if(prompts.grpc){
-          //
-          return true;
-      }
-      //
-      return false;
-    },
-    "default":""
   },
   "grpc.endpoint":{
     "name":"grpcEndpoint",

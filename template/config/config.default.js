@@ -1,5 +1,5 @@
 // Cookie安全字符串
-exports.keys = "<%= grpcKeys %>"
+exports.keys = "<%= cookieKeys %>"
 
 // grpc
 exports.grpc = {
