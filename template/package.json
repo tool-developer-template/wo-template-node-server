@@ -16,7 +16,7 @@
   "dependencies": {
     "egg": "^2.29.4",
     "egg-cors": "^2.2.3",
-    <% if (mobile) { -%>
+    <% if (grpc) { -%>
     "egg-grpc": "^1.0.3",
     <% } -%>
     "mysql2": "^2.2.5",

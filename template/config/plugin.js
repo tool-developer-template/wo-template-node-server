@@ -4,7 +4,7 @@ exports.sequelize = {
   package:'egg-sequelize'
 }
 
-<% if (mobile) { -%>
+<% if (grpc) { -%>
 // grpc
 exports.grpc = {
   enable:true,
