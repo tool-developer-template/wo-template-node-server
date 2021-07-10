@@ -32,7 +32,7 @@ exports.prompts = {
   "cookie.keys":{
     "name":"cookieKeys",
     "message":"Input cookie keys",
-    "default":"cookie-key:`${this.name}`"
+    "default":"`cookie-key:${this.name}`"
   },
   "grpc":{
     "message":"Do you want to use grpc?",
