@@ -1,0 +1,26 @@
+{
+  "development": {
+    "dialect":"<%= dialect %>",
+    "database":"<%= database %>",
+    "host":"<%= dbDevHost || dbHost %>",
+    "port":"<%= dbPort %>",
+    "username":"<%= username %>",
+    "password":"<%= password %>"
+  },
+  "test": {
+    "dialect":"<%= dialect %>",
+    "database":"<%= database %>",
+    "host":"<%= dbTestHost || dbHost %>",
+    "port":"<%= dbPort %>",
+    "username":"<%= username %>",
+    "password":"<%= password %>"
+  },
+  "production": {
+    "dialect":"<%= dialect %>",
+    "database":"<%= database %>",
+    "host":"<%= dbProHost || dbHost %>",
+    "port":"<%= dbPort %>",
+    "username":"<%= username %>",
+    "password":"<%= password %>"
+  }
+}

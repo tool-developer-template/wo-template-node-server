@@ -1,0 +1,24 @@
+#
+TYPE=node-server
+
+# branch
+BRANCH=<%= branch%>
+
+#
+CONTROLLER=app/controller/
+#
+MODEL=app/model
+#
+ROUTE=app/routes
+#
+PROTO=app/proto
+#
+VIEW= app/view
+#
+SERVICE= app/service
+#
+EXTEND= app/extend
+#
+MIDDLEWARE= app/middleware
+#
+SCHEDULE= app/schedule

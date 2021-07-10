@@ -1,0 +1,34 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.1",
+  "description": "<%= description %>",
+  "scripts": {
+    "db:migrate:init":"npx sequelize migration:generate",
+    "db:migrate":"npx sequelize db:migrate",
+    "db:migrate:undo":"npx sequelize db:migrate:undo",
+    "db:migrate:undo:all":"npx sequelize db:migrate:undo:all",
+    "dev": "egg-bin dev --port <%= port %>",
+    "test": "egg-bin test --port <%= port %>",
+    "debug": "egg-bin debug",
+    "start": "egg-scripts start --daemon --title <%= name %> --port <%= port %>",
+    "stop": "egg-scripts stop --title <%= name %>"
+  },
+  "dependencies": {
+    "egg": "^2.29.4",
+    "egg-cors": "^2.2.3",
+    <% if (mobile) { -%>
+    "egg-grpc": "^1.0.3",
+    <% } -%>
+    "mysql2": "^2.2.5",
+    <% if (dialect === 'postgres') { -%>
+    "pg": "^8.6.0",
+    <% } -%>
+    "egg-sequelize": "^6.0.0",
+    "koa-jwt": "^4.0.1",
+    "egg-scripts": "^2.14.0",
+  },
+  "devDependencies": {
+    "egg-bin": "^4.16.1",
+    "sequelize-cli": "^6.2.0"
+  }
+}
