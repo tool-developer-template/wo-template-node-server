@@ -1,6 +1,10 @@
 /**
  * User Model
  */
+
+const {ModelOptions} = require('../core/base.model');
+//
+
 module.exports = app => {
   const {
     STRING,
@@ -11,7 +15,10 @@ module.exports = app => {
   //
   const User = app.model.define('user',{
     id:{type:STRING(32),primaryKey:true},// 主键ID
-    create_at:{type:DATE,defaultValue:NOW},// 创建日期
+    //
+    created_at:{type:DATE,defaultValue:NOW},// 创建日期
+  },{
+    ...ModelOptions
   });
 
   //
