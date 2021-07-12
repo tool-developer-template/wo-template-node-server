@@ -1,5 +1,10 @@
 const Controller = require('../core/base.controller');
 
+// 自定义错误码提示信息
+Controller.codeInfo({
+  //
+})
+
 class <%= contextName %>Controller extends Controller{
   async index(){
 
