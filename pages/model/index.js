@@ -12,7 +12,7 @@ module.exports = app => {
     /*INTEGER,GEOMETRY,FLOAT,*/
   } = app.Sequelize;
   //
-  const <%= contextName %> = app.model.define(<%= pageName %>,{
+  const <%= contextName %> = app.model.define('<%= pageName %>',{
     id:{type:STRING(32),primaryKey:true},// 主键ID
     //
     created_at:{type:DATE,defaultValue:NOW},// 创建日期
