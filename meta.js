@@ -51,6 +51,12 @@ exports.prompts = {
     "type": "confirm",
     "default": true
   },
+  "jwt.enable": {
+    "name": "jwtEnable",
+    "message": "jwt is enable?",
+    "type": "confirm",
+    "default": true
+  },
   "jwt.secret": {
     "name": "jwtSecret",
     "message": "Input jwt secret,like jwt:",

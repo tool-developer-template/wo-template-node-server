@@ -7,8 +7,7 @@ exports.sequelize = {
 <% if (jwt) { -%>
 // jwt
 exports.jwt = {
-  //enable:true,
-  enable:false,
+  enable:<%= jwtEnable %>,
   package:'@tool-developer/egg-jwt'
 }
 <% } -%>
