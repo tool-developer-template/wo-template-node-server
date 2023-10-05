@@ -1,3 +1,5 @@
+const path = require('path');
+
 // Cookie安全字符串
 exports.keys = "<%= cookieKeys %>"
 
