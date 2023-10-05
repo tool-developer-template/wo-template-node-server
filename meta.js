@@ -1,15 +1,15 @@
 // 项目创建完成后输出信息
 exports.run = {
   "yarn": "Start to install dependencies for the project",
-  "dev": "Start development",
-  "test": "Start test",
-  "debug": "Start debug",
-  "start": "Start production",
-  "stop": "Stop production",
-  "db:migrate:init": "npx sequelize migration:generate",
-  "db:migrate": "npx sequelize db:migrate",
-  "db:migrate:undo": "npx sequelize db:migrate:undo",
-  "db:migrate:undo:all": "npx sequelize db:migrate:undo:all",
+  "yarn dev": "Start development",
+  "yarn test": "Start test",
+  "yarn debug": "Start debug",
+  "yarn start": "Start production",
+  "yarn stop": "Stop production",
+  "yarn db:migrate:init": "npx sequelize migration:generate",
+  "yarn db:migrate": "npx sequelize db:migrate",
+  "yarn db:migrate:undo": "npx sequelize db:migrate:undo",
+  "yarn db:migrate:undo:all": "npx sequelize db:migrate:undo:all",
 };
 
 // 必填
@@ -55,6 +55,14 @@ exports.prompts = {
     "name": "jwtEnable",
     "message": "jwt is enable?",
     "type": "confirm",
+    "when": function (prompts) {
+      if (prompts.jwt) {
+        //
+        return true;
+      }
+      //
+      return false;
+    },
     "default": true
   },
   "jwt.secret": {
@@ -113,7 +121,7 @@ exports.prompts = {
     "name": "sequelizeEnable",
     "message": "Sequelize db is enable?",
     "type": "confirm",
-    "default": false
+    "default": true
   },
   "db.dialect": {
     "name": "dialect",
@@ -124,7 +132,7 @@ exports.prompts = {
   },
   "db.database": {
     "name": "database",
-    "message": "Input db config database",
+    "message": "Input db config database,like xxxx_db",
     "validate": validateRequired
   },
   "db.username": {
