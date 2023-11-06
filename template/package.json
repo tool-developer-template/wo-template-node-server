@@ -15,7 +15,7 @@
   },
   "dependencies": {
     <% if (jwt) { -%>
-    "@tool-developer/egg-jwt": "^0.0.2",
+    "@tool-developer/egg-jwt": "^0.0.6",
     <% } -%>
     <% if (useragent) { -%>
     "@tool-developer/egg-useragent": "^0.0.2",
